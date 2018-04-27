@@ -1,0 +1,26 @@
+# display the menu
+
+print("MyATM Application")
+print("1. deposit");
+print("2. withdraw");
+print("3. display balance);
+print("4. quit);
+
+CurrentBalance = 1500;
+
+if(Option == 1)
+{
+   TransactionAmount = as.double(readline(prompt= "Enter TransactionAmount));
+   GlobalBalance = deposit(GlobalBalance, TransactionAmount);
+} else if( Option == 2)
+{
+   
+   TransactionAmount = as.double(readline(prompt= "Enter TransactionAmount));
+   GlobalBalance = withdraw(GlobalBalance, TransactionAmount);
+} else if(Option == 3)
+{
+   DisplayBalance(GlobalBalance);
+} else
+{
+   QuitProgram();
+}
